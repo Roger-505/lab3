@@ -44,6 +44,18 @@ void main () {
 			break;
 		case 1:
 			printf("Usted escogió una búsqueda lineal\n");
+			printf("Realizando búsqueda...\n");
+			// Realizar la búsqueda lineal.
+			result = busqueda_lineal(array, size, num);
+
+			// Se obtiene la  posiciñon del valor (si se encontró) y se imprime 
+			// el resultado de la búsqueda
+			if (result != -1){
+				printf("Se encontrò el valor %d en la posición %d del conjunto de valores\n\n", num, result);
+			}
+			else if (result == -1){
+				printf("No se encontró el valor %d en el conjunto de valores\n\n", num);
+			}
 			break;
 		case 2:
 			printf("Usted escogió una búsqueda binaria\n");
