@@ -10,7 +10,7 @@ Struct encontrarMinMax(int array[], int size)
 	result.max = array[0];
 	result.min = array[0];
 	
-	// Analizar array completo
+	// Analizar a array completo sin punteros
 	for (int i = 1 ; i < size ; i++){
 		// Si el elemento en el indice i es mayor que result.max,
 		// se convierte en el nuevo valor de result.max
